@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Expense App</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+      }
+      input,
+      button {
+        margin: 5px;
+        padding: 5px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Expense Tracker</h1>
+
+    <div>
+      <input placeholder="Title" id="title" />
+      <input id="amount" placeholder="Amount" type="number" />
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <ul id="expenses-list"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
