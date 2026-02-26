@@ -9,6 +9,7 @@ async function fetchExpense() {
     const res = await fetch(API_URL);
     const data = await res.json();
 
+    console.log('data', data);
     expensesList.innerHTML = "";
     
     data.forEach(exp => {
